@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+main {
+  font-family:  'Open Sans', sans-serif;
+}
+
+header {
+  background-image: url(img/fundo.jpeg);
+  display: block;
+}
+.nome , .sobre , #contato, #procurados, td {
+  text-align: center;
+}
+header ul {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  justify-content: space-between;
+  list-style-type: none; 
+}
+h4 .sobre {
+  display: flex;
+  margin-left: 5px;
+  
+}
+
+#contato .fa-facebook {
+  font-size: 35px;
+  color: navy ;
+  
+}
+#contato .fa-instagram{
+  font-size: 35px;
+  color: orangered;
+  
+}
+#contato .fa-telegram{
+  
+  font-size: 35px;
+  color: #0088cc;
+}
+
+#contato a:hover .fa-facebook {
+  font-size: 30px;
+}
+#contato a:hover .fa-instagram {
+  font-size: 30px;
+}
+#contato a:hover .fa-telegram {
+  font-size: 30px;
+}
+
+.sobre{
+  color: white;
+}
+footer {
+  background-color: black;
+}
