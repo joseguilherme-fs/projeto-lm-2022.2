@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>petrescue</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,38 +13,69 @@
 </head>
 
 <body>
-  <main>
-    <header>
-      <h1 class='nome'> Pet Rescue</h1>
-      <nav class="menu">
+  <header>
+    <img src='banner.png' style="max-width: 100%;
+  height: auto" 
+  </header>
+    <section id="navegacao">
+        <nav id="menu">
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/pages/animaisdesaparecidos.html">Animais desaparecidos</a></li>
-          <li><a href="/pages/adote.html">Adote</a></li>
+            <div class="box pesquisa">
+             <li>
+              <form id="pesquisa">
+                <input type="text" placeholder="busque por nomes de cidades e animais">
+              </form> 
+            </li>
+          </div>
+          <div class="box div">
+            <li><a href="/pages/animaisdesaparecidos.html"><button class="botao"><b>Registre-se</b></button> </a></li>
+            <li><a href="index2.html"><button class="botao"> Quero adotar!</button></a></li>
+            </div>
         </ul> 
       </nav>
-    </header>
-    
+    </section>
 
     <section id="desaparecidos">
-      <h1 id="procurados">Você viu algum desses animais?</h1>
-      <div>
-        <table>
-        <thead>
-          <th><img src="img/gato.jpeg" height="150px"></th>
+      <div style="margin-bottom: 30px;">
+      <h1 id="procurados" style="text-align: left; margin-left: 3em; margin-top: 40px; margin-bottom: 18px; font-size: 38px; font-weight: 750; ">Você viu algum desses animais?</h1>
+      <p class="instrucao">Caso você encontre algum dessses pets desaparecidos, não deixe de entrar em contato com as pessoas que os procuram!</p>
+      <p class="instrucao">Você também pode anunciar o desaparecimento do seu animal por aqui! É de graça, basta registrar-se.</p>  
+      </div>
+      
+      <div id='animais'>
+        <article id="nina">
+          <div class="desaparecidos animal1">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto gato'><img src="img/gato.jpeg" height="250px"  width="250px"></div>
+              <div class='name'>Nina</div>
+               <dive class ="cidadedia">Em Bayeux, desde outubro de 2022</dive>
+               <div class="detalhes"><button>detalhes</button></div>
+            
+          </div>
+        </article>
         
-          <th><img src="img/cachorro.jpeg" height="150px"></th>
-          <th><img src="img/Mini-Coelho.jpeg" height="150px"></th>
-        </thead>
-        <tbody>
-          <td>Nina</td>
-          <td>Hulk</td>
-          <td>Perna-longa</td>
-          <tr>
-          <td>postado em</td>
-        </tbody>
-      </table>
-      </div>  
+        <article id="hulk">
+          <div class="desaparecidos animal2">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto cachorro'><img src="img/cachorro.jpeg" height="250px" width="250px"></div>
+              <div class='name'>Hulk</div>
+               <dive class ="cidadedia">Em Sapé, desde Outubro de 2022</dive>
+                <div class="detalhes"><button>detalhes</button></div>
+            
+          </div>
+        </article>
+        
+        <article id="perna">
+          <div class="desaparecidos animal3">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto coelho'><img src="img/Mini-Coelho.jpeg" height="250px"  width="250px"></div>
+              <div class='name'>Perna-longa</div>
+               <dive class ="cidadedia">Em João Pessoa, desde Outubro de 2022</dive>
+                <div class="detalhes"><button>detalhes</button></div>
+            
+          </div>
+        </article>
+      </div> 
     </section>
 
    
@@ -63,7 +94,7 @@
        
       </section>
     </footer>
-  </main>
+
 </body>
 
 </html>
