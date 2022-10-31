@@ -1,0 +1,51 @@
+.p2 {
+  border-color: #ab8fe0!important;
+}
+
+#home button {
+  background-color: #343334;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.inicio{
+  display: none;
+}
+
+.fa-paw {
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ff914d;
+}
+
+@media (max-width: 537px){
+#home button {
+  background-color: #343334;
+  border-radius: 50%;
+  margin-top: 2px;
+  display: none;
+}
+
+.inicio {
+  display: unset;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.barra  {
+  display: flex;
+  align-items: center;
+  margin-left: 5%!important;
+
+
+}
+
+

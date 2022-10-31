@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>petrescue</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Pet Rescue</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2 family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <img src='banner.png' style="max-width: 100%;
-  height: auto" 
+    <img src='img/banner.png' style="max-width: 100%; height: auto" alt="Banner pet rescue">
   </header>
-    <section id="navegacao">
-        <nav id="menu">
+  
+    <section class="navegacao">
+        <nav>
         <ul>
-            <div class="box pesquisa">
-             <li>
-              <form id="pesquisa">
-                <input type="text" placeholder="busque por nomes de cidades e animais">
+            <div class="barra">
+              <form class="pesquisa">
+                <input  type="text" class='search' placeholder="busque por nomes de cidades e animais">
+                <button class='botaobusca'>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
               </form> 
-            </li>
-          </div>
-          <div class="box div">
-            <li><a href="/pages/animaisdesaparecidos.html"><button class="botao"><b>Registre-se</b></button> </a></li>
-            <li><a href="index2.html"><button class="botao"> Quero adotar!</button></a></li>
+            </div>
+          <div class="botaopiloto">
+            <li><a href="registro.html"><button class="botao">Registre-se</button></a></li>
+            <li><a href="index2.html"><button class="botao"> Adote!</button></a></li>
             </div>
         </ul> 
       </nav>
@@ -37,64 +36,151 @@
 
     <section id="desaparecidos">
       <div style="margin-bottom: 30px;">
-      <h1 id="procurados" style="text-align: left; margin-left: 3em; margin-top: 40px; margin-bottom: 18px; font-size: 38px; font-weight: 750; ">Você viu algum desses animais?</h1>
-      <p class="instrucao">Caso você encontre algum dessses pets desaparecidos, não deixe de entrar em contato com as pessoas que os procuram!</p>
-      <p class="instrucao">Você também pode anunciar o desaparecimento do seu animal por aqui! É de graça, basta registrar-se.</p>  
+        <h1 class="titulo1"><i class="fa-solid fa-location-dot" style="color: red;"></i> Você viu algum desses animais?</h1>
+        <p class="instrucao">Caso você encontre algum dessses pets desaparecidos, não deixe de entrar em contato com as pessoas que os procuram!</p>
+        <p class="instrucao">Você também pode anunciar o desaparecimento do seu animal por aqui! É de graça, basta registrar-se.</p>  
       </div>
       
-      <div id='animais'>
-        <article id="nina">
-          <div class="desaparecidos animal1">
+      <section class='animais'>
+        <article id="nina" class="card">    
             <div class="status">DESAPARECIDO</div>
               <div class='foto gato'><img src="img/gato.jpeg" height="250px"  width="250px"></div>
-              <div class='name'>Nina</div>
-               <dive class ="cidadedia">Em Bayeux, desde outubro de 2022</dive>
-               <div class="detalhes"><button>detalhes</button></div>
-            
-          </div>
+                <div class='name'>Nina</div>
+                 <div class ="cidademes">Em Bayeux, desde Outubro de 2022</div>
+                   <div class="btm">
+                     <div class="detalhes"><a href="#"> 
+                      <button>detalhes</button></a></div>
+                   </div>
         </article>
         
-        <article id="hulk">
-          <div class="desaparecidos animal2">
+        <article id="hulk" class="card">       
             <div class="status">DESAPARECIDO</div>
-              <div class='foto cachorro'><img src="img/cachorro.jpeg" height="250px" width="250px"></div>
+              <div class='foto cachorro'><img src="img/cao2.jpeg" height="250px" width="250px" border:1%;></div>
               <div class='name'>Hulk</div>
-               <dive class ="cidadedia">Em Sapé, desde Outubro de 2022</dive>
-                <div class="detalhes"><button>detalhes</button></div>
-            
-          </div>
+                <div class ="cidademes">Em Sapé, desde Outubro de 2022</div>
+                 <div class="btm">
+                   <div class="detalhes"><a href="#"> 
+                 <button>detalhes</button></a></div>
+                 </div>
         </article>
         
-        <article id="perna">
-          <div class="desaparecidos animal3">
+        <article id="perna" class="card">    
             <div class="status">DESAPARECIDO</div>
               <div class='foto coelho'><img src="img/Mini-Coelho.jpeg" height="250px"  width="250px"></div>
-              <div class='name'>Perna-longa</div>
-               <dive class ="cidadedia">Em João Pessoa, desde Outubro de 2022</dive>
-                <div class="detalhes"><button>detalhes</button></div>
-            
-          </div>
+               <div class='name'>Perna-longa</div>
+                <div class ="cidademes">Em João Pessoa, desde Outubro de 2022</div>
+                  <div class="btm">
+                   <div class="detalhes"><a href="#"> 
+                    <button>detalhes</button></a></div>
+                   </div>
         </article>
-      </div> 
-    </section>
+
+         <article id="Maquiavel" class="card">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto gato2'><img src="img/Gato_(2).jpeg" height="250px"  width="250px"></div>
+               <div class='name'>Maquiavel</div>
+                <div class ="cidademes">Em Patos, desde Outubro de 2022</div>
+                  <div class="btm">
+                   <div class="detalhes"><a href="#"> 
+                   <button>detalhes</button></a></div>
+                   </div>
+            <div class="fb-share-button" data-href="https://pet-rescue.projetolm22.repl.co/" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpet-rescue.projetolm22.repl.co%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>         
+        </article>
+
+         <article id="Lexa" class="card">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto lexa'><img src="img/lexa.jpeg" height="250px"  width="250px"></div>
+               <div class='name'>Lexa</div>
+                <div class ="cidademes">Em Itabaiana, desde Outubro de 2022</div>
+                  <div class="btm">
+                   <div class="detalhes"><a href="#"> 
+                   <button>detalhes</button></a></div>
+                   </div>        
+        </article>
+
+         <article id="mimo" class="card">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto mimo'><img src="img/gato3.jpeg" height="250px"  width="250px"></div>
+               <div class='name'>Mimo</div>
+                <div class ="cidademes">Em Cajá, desde Outubro de 2022</div>
+                  <div class="btm">
+                   <div class="detalhes"><a href="#"> 
+                    <button>detalhes</button></a></div>
+                   </div>
+        </article>
+
+ <article id="levi" class="card">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto levi'><img src="img/Levi.jpeg" height="250px"  width="250px"></div>
+               <div class='name'>Levi</div>
+                <div class ="cidademes">Em Souza, desde Outubro de 2022</div>
+                  <div class="btm">
+                   <div class="detalhes"><a href="#"> 
+                    <button>detalhes</button></a></div>
+                   </div>
+        </article>
+
+         <article id="perola" class="card">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto perola'><img src="img/perola.jpeg" height="250px"  width="250px"></div>
+               <div class='name'>Pérola</div>
+                <div class ="cidademes">Em Lucena, desde Outubro de 2022</div>
+                  <div class="btm">
+                   <div class="detalhes"><a href="#"> 
+                    <button>detalhes</button></a></div>
+                   </div>
+        </article>
+
+         <article id="rabito" class="card">
+            <div class="status">DESAPARECIDO</div>
+              <div class='foto rabito'><img src="img/rabito.jpeg" height="250px"  width="250px"></div>
+               <div class='name'>Rabito</div>
+                <div class ="cidademes">Em Mamanguape, desde Outubro de 2022</div>
+                  <div class="btm">
+                   <div class="detalhes"> 
+                   <button>detalhes</button></div>
+                   </div>
+        </article>
+        
+       <article id="rihanna" class="card">
+                <div class="status">DESAPARECIDO</div>
+                  <div class='foto rhianna'><img src="img/rihanna.jpeg" height="250px"  width="250px"></div>
+                   <div class='name'>Rihanna</div>
+                    <div class ="cidademes">Em Areia, desde Outubro de 2022</div>
+                      <div class="btm">
+                       <div class="detalhes"><a href="#"> 
+                       <button>detalhes</button></a></div>
+                       </div>
+        </article>
+        
+        
+      
+      </section>
 
    
     <footer>
       <article> 
-        <h2 class='sobre'> Sobre nós </h2> 
-        <p class="sobre"> Somos o maior site de busca de animais domesticos desaparecidos do Estado da Paraíba! </p>
+        <h2 class='titulo2'> Sobre nós </h2> 
+        <p class='descriçao'> Somos o maior site de busca de animais domesticos desaparecidos do Estado da Paraíba! <br>Totalmente gratuito, são mais de 5.000 acessos por dia! </p>
       <!-- </p> Sem fins lucrativos a plataforma foi desenvolvida para ser mais um recurso disponivel em  casos de desaparecimento de animais domésticos. o site conta com diversos acessos por semana </p> -->
       </article>
-      <section id="contato">
+      
+      <section class="contato">
         <div class="marcas">
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-telegram"></i></a>
         </div>
+        <div class="final">
+          <p style="font-weight: bold; font-size: 10px;">Projeto feito para a disciplina de Linguagens de Marcação | TSI - IFPB 2022.2 | by Nirielly, J. Guilherme e Janderson.</p>
+        </div>
        
       </section>
     </footer>
 
+<!-- Script para o Facebook -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v15.0" nonce="ptzRCAY8"></script>     
 </body>
 
 </html>
