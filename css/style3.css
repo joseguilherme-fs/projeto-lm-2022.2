@@ -1,6 +1,16 @@
-#cadastro {
-  text-align: center;
+body {
+  background-color: #f1f1f1!important;
+  font-family: 'Signika Negative', sans-serif;
 }
-form {
-  text-align: center;
+
+
+.btn {
+  margin: 8px;
+  background-color: #f49d64!important;
+  border-color: black!important;
+  border-radius: 10px!important;
+  color: black!important;
+  font-size: 1.2rem!important;
+  font-weight: bold!important;
+  
 }
