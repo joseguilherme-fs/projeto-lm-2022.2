@@ -1,16 +1,21 @@
-body {
-  background-color: #f1f1f1!important;
-  font-family: 'Signika Negative', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background-color: #f1f1f1!important;
+  font-family: 'Signika Negative', sans-serif!important;
+}
 
-.btn {
+.botao {
+  position: relative; top: 30px;
   margin: 8px;
+  text-decoration: none; 
   background-color: #f49d64!important;
   border-color: black!important;
   border-radius: 10px!important;
   color: black!important;
   font-size: 1.2rem!important;
   font-weight: bold!important;
-  
 }

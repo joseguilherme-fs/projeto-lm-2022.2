@@ -6,5 +6,6 @@ Pet Rescue Paraíba é um site feito para divulgar animais desaparecidos e anima
 
 ## Detalhes
 O site contém três páginas HTML5 (Principal - Registre-se - Adote) e três arquivos CSS.
+Foi utilizado Bootstrap na página 'Registre-se'.
 
 
